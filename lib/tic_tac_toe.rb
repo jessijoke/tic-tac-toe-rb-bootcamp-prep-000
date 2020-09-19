@@ -120,6 +120,6 @@ def play(board)
     turn(board)
   end
   if won?(board)
-    return "Congratulations #{winner(board)}
+    return "Congratulations #{winner(board)}"
   end
 end
