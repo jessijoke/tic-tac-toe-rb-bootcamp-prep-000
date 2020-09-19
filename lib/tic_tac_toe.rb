@@ -116,6 +116,7 @@ def winner(board)
 end
 
 def play(board)
-  while !full?(board) && !won?(board)
+  while !full?(board) && !won?(board) do
+    turn(board)
   
 end
