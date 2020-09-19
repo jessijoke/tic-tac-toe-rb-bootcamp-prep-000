@@ -118,5 +118,7 @@ end
 def play(board)
   while !full?(board) && !won?(board) do
     turn(board)
-  
+  end
+  if won?(board)
+    return 
 end
