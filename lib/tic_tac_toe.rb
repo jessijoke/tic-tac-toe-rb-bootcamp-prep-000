@@ -115,5 +115,7 @@ def winner(board)
   end
 end
 
-def play()
+def play(board)
+  while !full?(board) && !won?(board)
+  
 end
