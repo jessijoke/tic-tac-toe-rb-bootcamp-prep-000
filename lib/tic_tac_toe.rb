@@ -126,4 +126,3 @@ def play(board)
     puts "Cats Game!"
   end
 end
-end
