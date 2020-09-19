@@ -87,3 +87,27 @@ def won?(board)
   return false
 end
 
+def full?(board)
+  board.all? {|space| space != " "}
+end
+
+def draw?(board)
+  if full?(board) && !won?(board)
+    return true
+  end
+end
+
+def over?(board)
+  if won?(board) || full?(board) || draw?(board)
+    return true
+  end
+end
+
+def winner(board)
+  if won?(board)
+    arr = won?(board)
+    index = arr[0]
+    return board[index]
+  else
+    return nil
+  end
